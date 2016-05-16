@@ -1,0 +1,22 @@
+INTERESTING RULES (with initial zero matrix)
+
+IR 1: Without spillover, loops patterns (with spillover, just flashes)
+If n % 2 = 0, pattern eventually zeroes out
+Otherwise, pattern loops without zeroing out
+[
+	[1, 0, 1, 0, 1, 0, 1, 0, 1],
+	[0, 1, 0, 1, 0, 1, 0, 1, 0] 
+]
+
+IR 2: I can't explain the non-spill pattern, but it's cool.
+
+[
+	[1, 1, 0, 1, 1, 0, 1, 1, 0],
+	[0, 0, 1, 0, 0, 1, 0, 0, 1] 
+]
+
+IR 3: Starts out with a staircase
+[
+	[1, 0, 1, 0, 0, 1, 0, 0, 1],
+	[0, 0, 1, 0, 0, 1, 0, 0, 1] 
+]
